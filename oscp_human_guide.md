@@ -2127,3 +2127,15 @@ cat c:\\Inetpub\\iissamples\\sdk\\asp\\components\\adrot.txt
 # Recursive search
 dir /s
 ```
+### Another
+```
+#get full shell interaction
+
+Ctrl+Z
+echo $TERM 
+stty -a
+stty raw -echo'
+fg
+python2/3 -c 'import pty; pty.spawn("/bin/bash")'
+
+```
