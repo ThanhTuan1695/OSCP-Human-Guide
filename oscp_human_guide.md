@@ -216,6 +216,12 @@ pngcheck -v image.jpeg
 
 # Check what kind of image is
 identify -verbose image.jpeg
+
+# stehide to extract 
+stehide extract -sf file
+
+#cracking passphrase password
+stegcracker file wordlist
 ```
 
 ### Audio
