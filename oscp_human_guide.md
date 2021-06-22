@@ -2138,4 +2138,7 @@ stty raw -echo'
 fg
 python2/3 -c 'import pty; pty.spawn("/bin/bash")'
 
+#hacktrick
+https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
+
 ```
