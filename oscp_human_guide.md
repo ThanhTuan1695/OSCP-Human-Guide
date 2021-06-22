@@ -130,6 +130,10 @@ Table of Contents
 # Enumerate subnet
 nmap -sn 10.11.1.1/24
 
+#Port enumeration
+
+nmap -p ip
+
 # Fast simple scan
 nmap -sS 10.11.1.111
 
