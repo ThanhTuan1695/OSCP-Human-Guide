@@ -2141,6 +2141,9 @@ python2/3 -c 'import pty; pty.spawn("/bin/bash")'
 #hacktrick
 https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
 
+# privilege payload all the things
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+
 ```
 #Python reverse shell file
 ```
