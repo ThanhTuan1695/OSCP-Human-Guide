@@ -245,9 +245,13 @@ hideme stego.mp3 -f && cat output.txt #AudioStego
 
 ```bash
 nmap --script ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 10.11.1.111
+
 # ftp mount when we detect that it is the all write
 mkdir ftp $IP
 curlftpfs anonymous@$IP ftp/
+
+#or using put cmd
+put fileZ_edit
 
 ```
 
