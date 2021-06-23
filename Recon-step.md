@@ -4,7 +4,11 @@ nmap -p ip
 
 # quich scan
 
-nmap 
+nmap -sS IP
+
+# standarn namp scan
+
+nmap -sC -sC -vv -A 
 
 # Fast simple scan
 nmap -sS 10.11.1.111
