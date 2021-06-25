@@ -226,6 +226,8 @@ stehide extract -sf file
 
 #cracking passphrase password
 stegcracker file wordlist
+#binwalk
+binwalk image
 ```
 
 ### Audio
