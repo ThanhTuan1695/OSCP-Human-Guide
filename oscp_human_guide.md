@@ -194,6 +194,10 @@ exiftool file.xxx
 wget https://embeddedsw.net/zip/OpenPuff_release.zip
 unzip OpenPuff_release.zip -d ./OpenPuff
 wine OpenPuff/OpenPuff_release/OpenPuff.exe
+
+#list all file in home directory recursicve
+find /home --print ls
+ls -ahR
 ```
 
 ### Disk files
