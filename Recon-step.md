@@ -9,6 +9,7 @@ nmap -sS IP
 # standarn namp scan
 
 nmap -sC -sC -vv -A 
+
 nmap -sC -sV -Pn ip
 
 # Fast simple scan
