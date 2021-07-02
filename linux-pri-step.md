@@ -10,6 +10,10 @@ ls -arh
 # check weak file permission
 ls -la /etc/shadow
 
+# Check ssh key 
+find / -name authorized_keys 2> /dev/null
+find / -name id_rsa 2> /dev/null
+
 # find suid file
 find / -perm -u=\s -type f 2>/dev/null
 after saving the suid go through all the lib with gtfbin.io
