@@ -6,6 +6,10 @@ whoami
 
 # Check all the file you can read
 ls -arh
+
+# check weak file permission
+ls -la /etc/shadow
+
 # find suid file
 find / -perm -u=\s -type f 2>/dev/null
 after saving the suid go through all the lib with gtfbin.io
