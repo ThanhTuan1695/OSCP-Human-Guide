@@ -18,6 +18,7 @@ can search for the pattern
 # find suid file
 find / -perm -u=\s -type f 2>/dev/null
 after saving the suid go through all the lib with gtfbin.io
+symlink with nginx cve-2016 https://legalhackers.com/advisories/Nginx-Exploit-Deb-Root-PrivEsc-CVE-2016-1247.html
 
 # capicity
 getcap -r 2>/dev/null
