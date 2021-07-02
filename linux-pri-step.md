@@ -82,6 +82,7 @@ Exploitation
 
 Linux VM
 
+Note that the folder should be writable 
 5. In command prompt type: mkdir /home/user/.config
 6. In command prompt type: cd /home/user/.config
 7. Open a text editor and type:
