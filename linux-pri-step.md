@@ -42,6 +42,10 @@ Linux VM
 1. In command prompt type: sudo -l
 2. From the output, notice that the LD_PRELOAD environment variable is intact.
 
+``` Matching Defaults entries for TCM on this host:
+    env_reset, env_keep+=LD_PRELOAD
+```
+
 Exploitation
 
 1. Open a text editor and type:
