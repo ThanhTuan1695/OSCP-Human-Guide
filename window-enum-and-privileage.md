@@ -7,5 +7,6 @@ Did you remember? now we are in service account called sql_svc. It's good practi
 ``` 
     cgi c:\\ -Force -r -fi user.txt 2>NULL 
     cgi c:\\ -Force -r -fi *.txt 2>NULL
+    gci -Force -Recurse -Exclude “desktop.ini” | where {! $_.PSIsContainer}
 
 ```
