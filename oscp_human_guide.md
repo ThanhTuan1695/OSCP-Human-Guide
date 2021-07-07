@@ -604,6 +604,10 @@ sqsh -S 10.11.1.111 -U sa
   	go
 
 ```
+in case the userid=windown/name
+Let's try connecting to the SQL Server using Impacket's mssqlclient.py.
+mssqlclient.py UserID@ip --windows-auth
+
 
 ## Port 1521 - Oracle
 
