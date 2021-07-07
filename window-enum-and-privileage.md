@@ -10,3 +10,5 @@ Did you remember? now we are in service account called sql_svc. It's good practi
     gci -Force -Recurse -Exclude “desktop.ini” | where {! $_.PSIsContainer}
 
 ```
+# Local history file
+https://0xdf.gitlab.io/2018/11/08/powershell-history-file.html
