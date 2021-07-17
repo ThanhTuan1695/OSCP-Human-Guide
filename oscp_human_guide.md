@@ -1491,6 +1491,9 @@ find / -perm /u+w -user `whoami` 2>/dev/nul
 # Dirs with +w perms for current u/g
 find / perm /u=w -type -d -user `whoami` 2>/dev/null
 find / -perm /u+w,g+w -d -user `whoami` 2>/dev/null
+
+# search with group name
+find / -type f -group Name_group 2>/dev/null
 ```
 
 ### Unmounted filesystems
