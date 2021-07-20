@@ -4,6 +4,8 @@ id
 # check who are you
 whoami
 
+# GROUP
+belong to docker, lxd
 # Check all the file you can read
 ls -arh
 
