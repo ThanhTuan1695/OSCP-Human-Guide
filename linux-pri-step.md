@@ -233,3 +233,8 @@ Linux VM
 
 1. In command prompt type: /tmp/x
 2. In command prompt type: id
+
+#  sudo
+sudo -l -l 
+check if it can run any sudo with group
+https://then3wadm1n.wordpress.com/2020/11/27/03-write-up-chill-hack/
