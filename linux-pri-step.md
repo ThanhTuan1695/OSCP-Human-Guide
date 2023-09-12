@@ -152,6 +152,7 @@ gcc -pthread cow.c -o cow
 
 https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679 -> set uid for user as root
 searchsploit -m exploits/linux/local/40839.c -> change and add user password
+https://github.com/FireFart/dirtycow/blob/master/dirty.c
 
 # LD_PRELOAD on the enviroment
 Linux VM
