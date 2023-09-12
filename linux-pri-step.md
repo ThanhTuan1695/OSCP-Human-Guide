@@ -1,8 +1,14 @@
 # Check id
 id
 
+# check default value sudo
+su root
+password root
+
 # check who are you
 whoami
+# check ssh, id_rsa, authorized_hosts
+in case have authorized_host value -> refer to moneybox Playground
 
 # GROUP
 belong to docker, lxd
