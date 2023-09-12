@@ -150,6 +150,8 @@ https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails
 gcc -pthread cow.c -o cow
 ./cow
 
+https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679
+
 # LD_PRELOAD on the enviroment
 Linux VM
 
