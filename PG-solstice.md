@@ -50,6 +50,7 @@ version: OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
 ## port 25
 
 Exim smtpd
+ESMTP Exim 4.92 
 
 ## port 80
 apache 2.4.38
@@ -57,6 +58,8 @@ apache 2.4.38
 ## Port 2121
 ftp-anon: Anonymous FTP login allowed (FTP code 230)                                                                               
 |_drws------   2 www-data www-data     4096 Jun 18  2020 pub  
-
+- nothing inside pub
+- can not put file
 ## port 3128
-_http-server-header: squid/4.6                        
+_http-server-header: squid/4.6 
+https://shishirsub10.medium.com/unbalanced-hack-the-box-52eff9542000 -> tried
