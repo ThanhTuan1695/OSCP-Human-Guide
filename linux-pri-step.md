@@ -154,6 +154,8 @@ https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679 -> set uid for 
 searchsploit -m exploits/linux/local/40839.c -> change and add user password
 https://github.com/FireFart/dirtycow/blob/master/dirty.c
 
+in case can not run with conpile from attacker machine. try with compile from victim vm
+
 # LD_PRELOAD on the enviroment
 Linux VM
 
