@@ -153,8 +153,11 @@ gcc -pthread cow.c -o cow
 https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679 -> set uid for user as root
 searchsploit -m exploits/linux/local/40839.c -> change and add user password
 https://github.com/FireFart/dirtycow/blob/master/dirty.c
+40847.cpp
 
 in case can not run with conpile from attacker machine. try with compile from victim vm
+
+remember run linux exploit sugester to get maybe link
 
 # LD_PRELOAD on the enviroment
 Linux VM
