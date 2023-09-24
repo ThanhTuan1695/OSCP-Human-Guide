@@ -19,7 +19,7 @@ alias smbNmap='nmap --script=smb-enum* --script-args=unsafe=1 -T5 $IP'
 alias MFuzz='gobuster dir --url http://$IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50'
 
 # share tmux
-alias iplab='export IP=$IP'
+alias setip='tmux setenv IP $IP'
 
 # Misc
 alias clab='mkdir $lab && cd'
